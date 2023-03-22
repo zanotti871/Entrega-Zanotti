@@ -1,495 +1,489 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
-.nav-bar-container{
-    background:#222;;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: .5rem 2rem;
-    font-size: .7em;
-    font-family:'Montserrat', sans-serif;
-    text-transform: uppercase;
-    font-weight: 800;
-  
+.nav-bar-container {
+  background: #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  font-size: 0.7em;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
 }
-.logo-navbar{
-    width: 50%;
+.logo-navbar {
+  width: 50%;
 }
-.nav-bar ul{
-    display: flex;
-    align-items: center;
-    list-style: none;
+.nav-bar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
 }
-.nav-bar li{
-    margin-right: 1rem;
-  
+.nav-bar li {
+  margin-right: 1rem;
 }
-.nav-bar ul li a{
-    position: relative;
-    color: #ffffff;
-    text-decoration: none;
+.nav-bar ul li a {
+  position: relative;
+  color: #ffffff;
+  text-decoration: none;
 }
-.nav-bar li:last-child{
-    background: #4ad295;
-    padding: .25rem .75rem;
-    border-radius: .2rem;
+.nav-bar li:last-child {
+  background: #4ad295;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.2rem;
 }
 
-.nav-bar li a:after{
-    position: absolute;
-    bottom: 7px;
-    left: 0px;
-    width: 100%;
-    height: 4px;
-    background-color: #f0790a;
-    content: "";
-    opacity: 0;
-    transition: opacity 0.3s ease 0s, transform 0.3s ease 0s;
-    transform: translateY(20px);        
+.nav-bar li a:after {
+  position: absolute;
+  bottom: 7px;
+  left: 0px;
+  width: 100%;
+  height: 4px;
+  background-color: #f0790a;
+  content: "";
+  opacity: 0;
+  transition: opacity 0.3s ease 0s, transform 0.3s ease 0s;
+  transform: translateY(20px);
 }
-.nav-bar  li a:hover:after{
-    opacity:1;
-    transform: translateY(15px)
+.nav-bar li a:hover:after {
+  opacity: 1;
+  transform: translateY(15px);
 }
 
-.fa-bars{
-    font-size: 25px;
-    color: red;
+.fa-bars {
+  font-size: 25px;
+  color: red;
 }
-.fa-bars, #check{
-    display: none;
- 
+.fa-bars,
+#check {
+  display: none;
 }
 /*MEDIA QUERIES*/
 /*TABLET*/
-@media (max-width:768px){
-    .checkbtn{
-        display: block;
-    }
-    .fa-bars{
-        display: flex;
-        top: 20px;
-        left: 20px;
-        cursor: pointer;
-    }
-    .nav-bar ul{
-        display: block;
-        position:fixed;
-        top: 40px;
-        left: -100%;
-        background: #222222ab;
-        width: 100%;
-        height: 100vh;
-        right: 0;
-    }
-    .nav-bar ul li{
-        padding: 2rem;
-        display: flex;
-        justify-content: center;
-        margin: 0;
-    }
-    .nav-bar ul li:last-child{
-        background: none;
-        padding: 1rem;
-        
-    }
-    #check:checked ~ ul{
-        font-size: 2em;
-        left: 0;
-        transition: all .5s;
-    }
-    .nav-bar-container{
-        display: flex;
-        flex-direction: row-reverse;
-    
-    }
-    
-    .logo-navbar{
-        text-align: center;
-    }
-}
-.headerIndex{
+@media (max-width: 768px) {
+  .checkbtn {
+    display: block;
+  }
+  .fa-bars {
     display: flex;
-    flex-wrap: wrap;
-    background-image: url(../img/pizza-pizza-rellena.jpg);
-    background-size: cover;
-    width: auto;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 42px;
-}
-.headerIndex-info{
-    color: #ffffff;
-}
-.main-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    align-content: center;
-    background-color:rgb(243, 213, 191);
-    
-}
-.banner P{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    font-weight: 800;
-    background-color:rgba(5, 5, 5, 0.945);
-    width: 400px;
-    height: 111px ;
-    color:chocolate;
-}
-.parrafo-p{
-    font-family:serif;
-}
-.publicidad-Img{
-    width: 400px;
-    height: 330px;
-
-}
-
-.links{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    background-image: url(../img/pizza-pizza-rellena.jpg);
-    background-size: cover;
-    width: auto;
-    height: 400px;
-}
-
-.button-Index{
-    height: 30px;
-    width: 150px;
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: white;
-    background-color: #f0790a;
-    border:none;
-    border-radius: 20px;
-    position: relative;
+    top: 20px;
+    left: 20px;
     cursor: pointer;
-    z-index: 1;
-    transition: color 1s ease-in-out;
-}
-.button-Index:hover{
-    color:  #f0790a;
-    transition: all 1s ease-in-out;
-}
-.button-Index::before{
-    content: "";
-    position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background-color: white;
-    border-radius: 5px;
-    width: 0;
-    height: 100%;
-    z-index: -1;
-    transition: all 1s ease-in-out;
-}
-button:hover::before{
+  }
+  .nav-bar ul {
+    display: block;
+    position: fixed;
+    top: 40px;
+    left: -100%;
+    background: #222222ab;
     width: 100%;
-    transition: all 1s ease-in-out;
+    height: 100vh;
+    right: 0;
+  }
+  .nav-bar ul li {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  .nav-bar ul li:last-child {
+    background: none;
+    padding: 1rem;
+  }
+  #check:checked ~ ul {
+    font-size: 2em;
+    left: 0;
+    transition: all 0.5s;
+  }
+  .nav-bar-container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .logo-navbar {
+    text-align: center;
+  }
+}
+.headerIndex {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url(../img/pizza-pizza-rellena.jpg);
+  background-size: cover;
+  width: auto;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 42px;
+}
+.headerIndex-info {
+  color: #ffffff;
+}
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-content: center;
+  background-color: rgb(243, 213, 191);
+}
+.banner P {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 800;
+  background-color: rgba(5, 5, 5, 0.945);
+  width: 400px;
+  height: 111px;
+  color: chocolate;
+}
+.parrafo-p {
+  font-family: serif;
+}
+.publicidad-Img {
+  width: 400px;
+  height: 330px;
 }
 
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-image: url(../img/pizza-pizza-rellena.jpg);
+  background-size: cover;
+  width: auto;
+  height: 400px;
+}
+
+.button-Index {
+  height: 30px;
+  width: 150px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
+  background-color: #f0790a;
+  border: none;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+  transition: color 1s ease-in-out;
+}
+.button-Index:hover {
+  color: #f0790a;
+  transition: all 1s ease-in-out;
+}
+.button-Index::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 5px;
+  width: 0;
+  height: 100%;
+  z-index: -1;
+  transition: all 1s ease-in-out;
+}
+button:hover::before {
+  width: 100%;
+  transition: all 1s ease-in-out;
+}
 
 /*fin Index*/
-.container__Tarjeta{
-    background-image: url(../img/pizza-pizza-rellena.jpg);
-    width: 100%;
-    color: #fff;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.container__Tarjeta {
+  background-image: url(../img/pizza-pizza-rellena.jpg);
+  width: 100%;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-.container__Tarjeta h3{
-    font-size: 22px;
+.container__Tarjeta h3 {
+  font-size: 22px;
 }
-.container__Tarjeta p{
-    font-size: 20px;
+.container__Tarjeta p {
+  font-size: 20px;
 }
-.tarjeta{
-    width: 250px;
-    border: solid 2px;
-    border-radius: 8px;
-    padding: 10px;
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    
+.tarjeta {
+  width: 250px;
+  border: solid 2px;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
 }
-.fa-location-dot{
-    font-size: 25px;
-    margin-right: 20px;
+.fa-location-dot {
+  font-size: 25px;
+  margin-right: 20px;
 }
-.tarjeta__titulo{
-    margin-bottom: 8px;
+.tarjeta__titulo {
+  margin-bottom: 8px;
 }
 
-.btn{
-    display: block;
-    width: 150px;
-    text-align: center;
-    padding: 10px;
-    margin: 10px;
-    border: 1px solid white;
-    border-radius: 5px;
-    color: white;
-    text-decoration: none;
-
+.btn {
+  display: block;
+  width: 150px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
 }
 /* sucursales fin*/
-.container__QuienesSomos{
-    background-image: url(../img/pizza-come-in-pizzeria.jpg);
-    background-size: cover;
-    max-width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: end;
-    align-items:center;
+.container__QuienesSomos {
+  background-image: url(../img/pizza-come-in-pizzeria.jpg);
+  background-size: cover;
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 
-.parráfos__QuienesSomos{
-    color: black;
-    margin: 40px;
-    padding: 20px;
-    height: 700px;
-    border-radius:8px;
-    text-align: justify;
+.parráfos__QuienesSomos {
+  color: black;
+  margin: 40px;
+  padding: 20px;
+  height: 700px;
+  border-radius: 8px;
+  text-align: justify;
 }
-.parráfos__QuienesSomos h3{ 
-    font-size: 25px;
-    margin-bottom:  10px;
+.parráfos__QuienesSomos h3 {
+  font-size: 25px;
+  margin-bottom: 10px;
 }
-.parráfos__QuienesSomos p{
-    margin: 5px;
-
+.parráfos__QuienesSomos p {
+  margin: 5px;
 }
 /*MEDIA QUERIES*/
 /*TABLET*/
-@media (max-width:768px){
-.container__QuienesSomos{
+@media (max-width: 768px) {
+  .container__QuienesSomos {
     font-size: 14px;
-   
-}
-
+  }
 }
 /*Contacto*/
-.container-contacto{
-    background-image:url(../img/vista-superior-rebanadas-pizza-salami.jpg);
-    background-size: cover;
-    width: 100%;
-    display: flex;
-    flex-wrap:wrap ;
-    justify-content: space-evenly;
-    align-items: center;
+.container-contacto {
+  background-image: url(../img/vista-superior-rebanadas-pizza-salami.jpg);
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.formulario{
-    background-color: #d89d1d6b;
-    width: 400px;
-    margin: 20px ;
-    border-radius: 5px;
-    display: grid;
-    gap: 10px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 1fr 1fr 1fr 1fr 1px;
-    grid-template-areas: "titulo titulo"
-                        "nomApell email"
-                        "tel      asunto"
-                        "mensaje  mensaje"
-                        "btn       btn";
+.formulario {
+  background-color: #d89d1d6b;
+  width: 400px;
+  margin: 20px;
+  border-radius: 5px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 1fr 1fr 1fr 1fr 1px;
+  grid-template-areas:
+    "titulo titulo"
+    "nomApell email"
+    "tel      asunto"
+    "mensaje  mensaje"
+    "btn       btn";
 }
-.formulario h2:nth-child(1){
-    grid-area: titulo;
-    color: white;
+.formulario h2:nth-child(1) {
+  grid-area: titulo;
+  color: white;
 }
-.formulario label:nth-child(2){
-    grid-area: nomApell;
+.formulario label:nth-child(2) {
+  grid-area: nomApell;
 }
-.formulario label:nth-child(3){
-    grid-area: email;
+.formulario label:nth-child(3) {
+  grid-area: email;
 }
-.formulario label:nth-child(4){
-    grid-area: tel;
+.formulario label:nth-child(4) {
+  grid-area: tel;
 }
-.formulario label:nth-child(5){
-    grid-area: asunto;
+.formulario label:nth-child(5) {
+  grid-area: asunto;
 }
-.formulario label:nth-child(6){
-    grid-area: mensaje;
+.formulario label:nth-child(6) {
+  grid-area: mensaje;
 }
-.formulario button:nth-child(7){
-    grid-area: btn;
-    background-color: #b36d12ee;
-    border: 0;
-    color: white;
-    border-radius: 10px;
-    font-size: 20px;
-    margin: 10px;
-    margin-top: 20px;
-    font-family:'Quicksand', sans-serif;
-    cursor: pointer;
+.formulario button:nth-child(7) {
+  grid-area: btn;
+  background-color: #b36d12ee;
+  border: 0;
+  color: white;
+  border-radius: 10px;
+  font-size: 20px;
+  margin: 10px;
+  margin-top: 20px;
+  font-family: "Quicksand", sans-serif;
+  cursor: pointer;
 }
-.formulario > label{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    color: white;
+.formulario > label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
 }
-.formulario > label > input,.formulario > label >textarea{
-    background-color: transparent;
-    color: #fff;
-    border: 0;
-    outline: none;
-    border-bottom: 1px solid white;
-    
+.formulario > label > input,
+.formulario > label > textarea {
+  background-color: transparent;
+  color: #fff;
+  border: 0;
+  outline: none;
+  border-bottom: 1px solid white;
 }
 .formulario > label > input:focus {
-    color: white;
-    font-family: 'Quicksand', sans-serif;;
+  color: white;
+  font-family: "Quicksand", sans-serif;
 }
-.formulario >label>textarea{
-    height: 50px;
+.formulario > label > textarea {
+  height: 50px;
 }
 
 /* Login-franquica*/
 
-.login-card{
-    margin: 20px 0;
-    width: 400px;
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px solid #fff;
-    text-align: center;
-    color:#fff
+.login-card {
+  margin: 20px 0;
+  width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  text-align: center;
+  color: #fff;
 }
-.login-card >h2{
-    margin: 0 0 10px;
-    font-size: 20px;
-    font-weight: 600;
-    text-transform: uppercase;
-    
+.login-card > h2 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
-.login-form{
-    width: 80%;
-    margin: 0;
-    display: grid;
-    gap: 14px;
+.login-form {
+  width: 80%;
+  margin: 0;
+  display: grid;
+  gap: 14px;
 }
-.login-form >a {
-    color: #01050c;
-    text-decoration: none;
-
-    
+.login-form > a {
+  color: #01050c;
+  text-decoration: none;
 }
 .login-form > input,
-.login-form >button{
-    background-color: #ffffff81;
-    width: 100%;
-    height: 40px;
-    padding: 0;
-    border-radius: 8px;
+.login-form > button {
+  background-color: #ffffff81;
+  width: 100%;
+  height: 40px;
+  padding: 0;
+  border-radius: 8px;
 }
-.login-form > input{
-    border:  2px solid #ebebeb;
-    color: #140a0a;
+.login-form > input {
+  border: 2px solid #ebebeb;
+  color: #140a0a;
 }
-.login-form >button{
-    width: 100%;
-    height: 40px;
-    background: #a8bad8;
-    color: #f9f9f9;
-    font-weight: 600;
-    cursor: pointer;
+.login-form > button {
+  width: 100%;
+  height: 40px;
+  background: #a8bad8;
+  color: #f9f9f9;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 /*Carta*/
+.carta {
+  background-color: #9c591b;
+  height: 100%;
+}
+ .container-carta h3{
+  color:#fff;
+  font-size: 30px;
+  font-weight: 600;
+}
+.container-carta h5,p{
+  color: #fff;
+}
 
 /*Inicio-footer*/
-.footer-pie{
-    width: 100%;
-    background:#0a141d;
-    
+.footer-pie {
+  width: 100%;
+  background: #0a141d;
 }
 
-.footer-pie .footer-container{
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns:repeat(3, 1fr);
-    grid-gap: 40px;
-    padding:20px 0px;
+.footer-pie .footer-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  padding: 20px 0px;
 }
-.footer-pie .footer-container .footer-logo{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.footer-pie .footer-container .footer-logo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.footer-pie .footer-container .footer-logo{
-    width: 300px;
+.footer-pie .footer-container .footer-logo {
+  width: 300px;
 }
-.footer-pie .footer-container .colum-a h2{
-    color: #fff;
-    margin-bottom: 25px;
-    font-size: 20px;
+.footer-pie .footer-container .colum-a h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
 }
-.footer-pie .footer-container .colum-a{
-    color: #efefef;
-    margin-bottom: 10px;
+.footer-pie .footer-container .colum-a {
+  color: #efefef;
+  margin-bottom: 10px;
 }
-.footer-pie .footer-container .colum-Sociales a{
-    display: inline-block;
-    text-decoration: none;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    color: #fff;
-    margin-right: 10px;
-    background-color:#0d2033;
-    text-align: center;
-    transition: all 300ms ease;
-
+.footer-pie .footer-container .colum-Sociales a {
+  display: inline-block;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #0d2033;
+  text-align: center;
+  transition: all 300ms ease;
 }
-.footer-pie .footer-container .colum-Sociales a:hover{
-    color:chocolate;
+.footer-pie .footer-container .colum-Sociales a:hover {
+  color: chocolate;
 }
-.footer-pie .footer-container2{
-    background-color: #0a1a2a;
-    padding: 15px 10px;
-    text-align: center;
-
+.footer-pie .footer-container2 {
+  background-color: #0a1a2a;
+  padding: 15px 10px;
+  text-align: center;
 }
-.footer-pie .footer-container2 small{
-    font-size: 20px;
+.footer-pie .footer-container2 small {
+  font-size: 20px;
 }
 /*MEDIA QUERIES*/
 /*TABLET*/
-@media (max-width:768px) {
-    .footer-pie .footer-container{
-        width: 80%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 20px;
-        padding: 20px 0px;
-    }
-
+@media (max-width: 768px) {
+  .footer-pie .footer-container {
+    width: 80%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    padding: 20px 0px;
+  }
 }
