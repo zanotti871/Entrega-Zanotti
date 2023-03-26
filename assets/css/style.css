@@ -115,37 +115,40 @@
   flex-wrap: wrap;
   background-image: url(../img/pizza-pizza-rellena.jpg);
   background-size: cover;
-  width: auto;
+  width: 100%;
   height: 400px;
-  display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 42px;
 }
-.headerIndex-info {
+.headerIndex-info h1{
   color: #ffffff;
+  font-size: 84px;
 }
 .main-container {
   display: flex;
+  width: 100%;
+  height: auto;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
   align-content: center;
   background-color: rgb(243, 213, 191);
 }
-.banner P {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-  font-weight: 800;
+.banner{
   background-color: rgba(5, 5, 5, 0.945);
   width: 400px;
-  height: 111px;
+  height: 330px;
+}
+.banner P{
+  text-align: center;
+  margin: 50px;
+  font-size: 20px;
+  font-weight: 800;
   color: chocolate;
 }
 .parrafo-p {
   font-family: serif;
+  font-size: 17px;
 }
 .publicidad-Img {
   width: 400px;
@@ -160,13 +163,13 @@
   text-align: center;
   background-image: url(../img/pizza-pizza-rellena.jpg);
   background-size: cover;
-  width: auto;
+  width: 100%;
   height: 400px;
 }
 
 .button-Index {
-  height: 30px;
-  width: 150px;
+  height: 50px;
+  width: 180px;
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
@@ -201,25 +204,122 @@ button:hover::before {
   width: 100%;
   transition: all 1s ease-in-out;
 }
+/*MEDIA QUERIES*/
+/*TABLET*/
+@media (max-width: 768px) {
+  .headerIndex {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(../img/pizza-pizza-rellena.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+  }
+  .headerIndex-info h1{
+    color: #ffffff;
+    font-size: 54px;
+  }
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-image: url(../img/pizza-pizza-rellena.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+  }
+}
 
+/*MEDIA QUERIES*/
+/*MOBIL*/
+@media (max-width: 576px) {
+  .headerIndex {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(../img/pizza-pizza-rellena.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+  }
+  .headerIndex-info h1{
+    color: #ffffff;
+    font-size: 38px;
+  }
+}
+
+/*MEDIA QUERIES*/
+/*MOBIL*/
+@media (max-width: 320px) {
+  .headerIndex {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(../img/pizza-pizza-rellena.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+  }
+  .headerIndex-info h1{
+    color: #ffffff;
+    font-size: 22px;
+  }
+  .banner{
+    background-color: rgba(5, 5, 5, 0.945);
+    width: 320px;
+    height: 180px;
+  }
+  .banner P{
+    text-align: center;
+    margin: 30px;
+    font-size: 18px;
+    font-weight: 800;
+    color: chocolate;
+  }
+  .publicidad-Img {
+    width: 320px;
+    height: 200px;
+  }
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-image: url(../img/pizza-pizza-rellena.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100px;
+  }
+  
+}
 /*fin Index*/
+/*Sucursales*/
 .container__Tarjeta {
   background-image: url(../img/pizza-pizza-rellena.jpg);
   width: 100%;
-  color: #fff;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  font-weight: 600;
 }
 .container__Tarjeta h3 {
   font-size: 22px;
+  color: #110801;
 }
 .container__Tarjeta p {
   font-size: 20px;
+  color: #000205;
 }
 .tarjeta {
   width: 250px;
-  border: solid 2px;
+  border: 2px solid #fff ;
   border-radius: 8px;
   padding: 10px;
   margin: 10px;
@@ -228,56 +328,130 @@ button:hover::before {
 }
 .fa-location-dot {
   font-size: 25px;
+  color: #fff;
   margin-right: 20px;
 }
 .tarjeta__titulo {
   margin-bottom: 8px;
 }
 
-.btn {
-  display: block;
-  width: 150px;
-  text-align: center;
-  padding: 10px;
-  margin: 10px;
-  border: 1px solid white;
-  border-radius: 5px;
-  color: white;
+.tarjeta-info a{
   text-decoration: none;
 }
+.btn{
+  height: 40px;
+  width: 180px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+  background-color: #f0790a;
+  border: none;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+  transition: color 1s ease-in-out;
+}
+
+.btn:hover {
+  color: #f0790a;
+  transition: all 1s ease-in-out;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 5px;
+  width: 0;
+  height: 100%;
+  z-index: -1;
+  transition: all 1s ease-in-out;
+}
+.btn:hover::before {
+  width: 100%;
+  transition: all 1s ease-in-out;
+}
 /* sucursales fin*/
+/*quienessomos*/
 .container__QuienesSomos {
   background-image: url(../img/pizza-come-in-pizzeria.jpg);
   background-size: cover;
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 700px;
   display: flex;
   justify-content: end;
   align-items: center;
 }
 
-.parráfos__QuienesSomos {
+.parráfos__QuienesSomos h2{
   color: black;
-  margin: 40px;
-  padding: 20px;
-  height: 700px;
-  border-radius: 8px;
-  text-align: justify;
-}
-.parráfos__QuienesSomos h3 {
-  font-size: 25px;
+  font-size: 30px;
+  font-weight: 800;
   margin-bottom: 10px;
 }
-.parráfos__QuienesSomos p {
-  margin: 5px;
+.parráfos__QuienesSomos p{
+  padding: 10px;
+  color: #9c591b;
+  font-size: 18px;
+  font-weight: 600;
 }
 /*MEDIA QUERIES*/
 /*TABLET*/
 @media (max-width: 768px) {
   .container__QuienesSomos {
-    font-size: 14px;
+    background-image: url(../img/pizza-come-in-pizzeria.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  .parráfos__QuienesSomos h2{
+    color: black;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 10px;
+  }
+  .parráfos__QuienesSomos p{
+    padding: 10px;
+    color: #9c591b;
+    font-size: 16px;
+    font-weight: 600;
   }
 }
+@media (max-width: 576px) {
+  .container__QuienesSomos {
+    background-image: url(../img/pizza-come-in-pizzeria.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+}
+
+
+/*MOBIL*/
+@media (max-width: 320px) {
+  .container__QuienesSomos {
+    background-image: url(../img/pizza-come-in-pizzeria.jpg);
+    background-size:cover;
+    width: 100%;
+    height: 480px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+}
+
 /*Contacto*/
 .container-contacto {
   background-image: url(../img/vista-superior-rebanadas-pizza-salami.jpg);
@@ -442,9 +616,7 @@ button:hover::before {
   justify-content: center;
   align-items: center;
 }
-.footer-pie .footer-container .footer-logo {
-  width: 300px;
-}
+
 .footer-pie .footer-container .colum-a h2 {
   color: #fff;
   margin-bottom: 25px;
@@ -476,14 +648,40 @@ button:hover::before {
 }
 .footer-pie .footer-container2 small {
   font-size: 20px;
+  color:#fff;
 }
 /*MEDIA QUERIES*/
 /*TABLET*/
 @media (max-width: 768px) {
   .footer-pie .footer-container {
-    width: 80%;
+    width: 70%;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px;
     padding: 20px 0px;
+  }
+}
+
+
+/*MEDIA QUERIES*/
+/*MOBIL*/
+@media (max-width: 576px) {
+  .footer-pie .footer-container {
+    width: 50%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    padding: 20px 0px;
+  }
+}
+/*MEDIA QUERIES*/
+/*MOBIL*/
+@media (max-width: 320px) {
+  .footer-pie .footer-container {
+    width: 50%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    padding: 20px 0px;
+  }
+  .logo-footer img{
+    width: 150px;
   }
 }
