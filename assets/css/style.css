@@ -124,6 +124,7 @@
   color: #ffffff;
   font-size: 84px;
 }
+
 .main-container {
   display: flex;
   width: 100%;
@@ -133,6 +134,12 @@
   align-content: center;
   align-content: center;
   background-color: rgb(243, 213, 191);
+}
+
+
+.publicidad-Img {
+  width: 400px;
+  height: 330px;
 }
 .banner{
   background-color: rgba(5, 5, 5, 0.945);
@@ -150,10 +157,7 @@
   font-family: serif;
   font-size: 17px;
 }
-.publicidad-Img {
-  width: 400px;
-  height: 330px;
-}
+
 
 .links {
   display: flex;
