@@ -343,9 +343,9 @@ textarea {
 
 /* Login-franquica*/
 .login-card {
-  margin: 20px 0;
+  margin: 10px 0;
   width: 400px;
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
   border: 1px solid #fff;
   text-align: center;
@@ -381,7 +381,7 @@ textarea {
 }
 
 .login-form > input {
-  border: 2px solid #8f0d0d;
+  border: 2px solid #f2f0f0;
   color: #e0d6d6;
 }
 
@@ -574,10 +574,10 @@ header .d-item .d-img {
 }
 @media (max-width: 576px) {
   header .d-item {
-    height: 500px;
+    height: 300px;
   }
   header .d-item header .d-img {
-    height: 100%;
+    height: 200px;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -607,7 +607,7 @@ header .d-item .d-img {
   }
   main .gif {
     width: 320px;
-    height: 300px;
+    height: 250px;
   }
   section.links {
     background-image: url(../img/fondo_links1.jpg);
@@ -669,7 +669,7 @@ header .d-item .d-img {
 /*MOBIL*/
 @media (max-width: 320px) {
   form {
-    width: 100%;
+    max-width: 250px;
   }
   .login-card {
     margin: 0;
