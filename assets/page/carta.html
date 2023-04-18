@@ -4,11 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pizzeria|Carta</title>
+    <meta
+      name="description"
+      content="PizzeriaPopular es el lugar perfecto para disfrutar de las mejores pizzas,
+    empanadas y varidades.¡Veni a Visitarmos, Te esperamos!"
+    />
+    <meta name="keywords" content="" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
       crossorigin="anonymous"
     />
     <link
@@ -17,10 +22,11 @@
     />
     <link
       rel="shortcut icon"
-      href="../img/Logo_Pizza_Principal.Icon.png"
+      href="../img/Logo_Pizza-ico.ico"
       type="image/x-icon"
     />
     <link rel="stylesheet" href="../sass/main.css" />
+    <title>Pizzeria|Carta</title>
   </head>
   <body>
     <nav class="nav-bar-container">
@@ -43,66 +49,136 @@
         </ul>
       </div>
     </nav>
-    <header class="headerIndex">
-      <div class="headerIndex-info">
-        <h1>La Mejor Pizzeria</h1>
+    <header>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active d-item">
+            <img src="../img/slider_1.jpg" class="d-block w-100 d-img" alt="slider 1">
+          </div>
+          <div class="carousel-caption top-0 mt-4">
+            <h1 class="display-1 fw-bolder text-capitalize">LA MEJOR PIZZERIA</h1>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active d-item">
+              <img src="../img/slader_2.jpg" class="d-block w-100 d-img" alt="slider 2">
+            </div>
+            <div class="carousel-caption top-0 mt-4">
+              <h1 class="display-1 fw-bolder text-capitalize">LA MEJOR PIZZERIA</h1>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active d-item">
+                <img src="../img/slider_3.jpg" class="d-block w-100 d-img" alt="slider 3">
+              </div>
+              <div class="carousel-caption top-0 mt-4">
+                <h1 class="display-1 fw-bolder text-capitalize">LA MEJOR PIZZERIA</h1>
+              </div>
+          
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
       </div>
     </header>
     <main class="carta">
-      <section class="p-5">
-        <div class="container-carta">
-          <h3 class="text-center pb-3">Nuestra Carta</h3>
-          <div class="row">
-            <div class="col-4">
-              <div class="card-carta">
-                <img src="../img/menu-1.jpg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Deep Dish Pepperoni Lovers</h5>
-                  <p class="card-text">Queso mozzarella y doble pepperoni.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="card-carta">
-                <img src="../img/menu-2.jpg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Deep Dish Veggie Lovers</h5>
-                  <p class="card-text">
-                    pimiento rojo, cebolla,champiñones y aceitunas.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="card-carta">
-                <img src="../img/menu-3.jpg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Deep Dish Xtreme Supreme</h5>
-                  <p class="card-text">
-                    Pepperoni, salchicha italiana, champiñones, cebolla y
-                    pimiento.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="heading">
+            <h1>Nuestra Propuesta</h1>
+            <h3>&mdash; CARTA &mdash; </h3>
         </div>
-      </section>
+        <div class="food-items">
+            <img src="../img/menu-1.jpg" alt="Deep Dish Pepperoni Lovers">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Deep Dish Pepperoni Lovers</h5>
+                    <h5 class="price"> $1800 </h5>
+                </div>
+                <p>Queso mozzarella y doble pepperoni.</p>
+                <button>Pedir</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="../img/menu-2.jpg" alt= "Pizza Rúcula y Tomates Secos">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Rúcula y Tomates Secos</h5>
+                    <h5 class="price"> $1500 </h5>
+                </div>
+                <p>Mozzarella, rúcula, tomates secos hidratados y provolone.</p>
+                <button>Pedir</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="../img/menu-3.jpg" alt=" Pizza Rúcula Y Panceta Confitada">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Rúcula Y Panceta Confitada</h5>
+                    <h5 class="price"> $1800 </h5>
+                </div>
+                <p>Mozzarella, rúcula fresca, panceta confitada y provolone..</p>
+                <button>Pedir</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="../img/menu-4.jpg" alt="Pizza con Provolone">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Pizza con Provolone</h5>
+                    <h5 class="price"> $1200</h5>
+                </div>
+                <p>Mozzarella, provolone, hebras de jamón cocido, morrones, olivas y orégano.</p>
+                <button>Pedir</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="../img/menu-5.jpg" alt="Empanadas Criollas">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Empanadas Criollas </h5>
+                    <h5 class="price"> $350 c/u </h5>
+                </div>
+                <p>rellenas con carne picada a cuchillo, huevo y aceitunas</p>
+                <button>Pedir</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="../img/menu-6.jpg" alt="Empanadas Arabes">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Empanadas Arabes</h5>
+                    <h5 class="price"> $350 </h5>
+                </div>
+                <p>Elaboradas con la mejor carne Argentina</p>
+                <button>Pedir</button>
+            </div>
+        </div>
     </main>
     <footer class="footer-pie">
       <div class="footer-container">
-        <div class="logo-footer">
-          <img src="../img/LogoMakr-0N7aIZ.png" alt="" />
+        <div >
+          <img class="logo-footer"src="../img/LogoMakr-0N7aIZ.png" alt="logo-footer" />
         </div>
-        <div class="colum-a">
+        <div class="column-a">
           <h2>Seguinos</h2>
-          <div class="colum-Sociales">
+          <div class="column-Sociales">
             <a href="#" class="fa-brands fa-facebook"></a>
             <a href="#" class="fa-brands fa-twitter"></a>
             <a href="#" class="fa-brands fa-tiktok"></a>
           </div>
         </div>
-        <div class="colum-a">
+        <div class="column-a">
           <h2>Trabaja con Nosotros</h2>
           <p>mail@examp.com</p>
         </div>
@@ -110,11 +186,11 @@
       <div class="footer-container2">
         <small>&copy; 2023</small>
       </div>
+    </footer>
       <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"
       ></script>
-    </footer>
   </body>
 </html>

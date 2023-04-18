@@ -1,127 +1,99 @@
 /*Contacto*/
 .container-contacto {
-    background-image: url(../img/vista-superior-rebanadas-pizza-salami.jpg);
-    background-size: cover;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  
-  .formulario {
-    background-color: #d89d1d6b;
-    width: 400px;
-    margin: 20px;
-    border-radius: 5px;
-    display: grid;
-    gap: 10px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 1fr 1fr 1fr 1fr 1px;
-    grid-template-areas:
-      "titulo titulo"
-      "nomApell email"
-      "tel      asunto"
-      "mensaje  mensaje"
-      "btn       btn";
-  }
-  .formulario h2:nth-child(1) {
-    grid-area: titulo;
-    color: white;
-  }
-  .formulario label:nth-child(2) {
-    grid-area: nomApell;
-  }
-  .formulario label:nth-child(3) {
-    grid-area: email;
-  }
-  .formulario label:nth-child(4) {
-    grid-area: tel;
-  }
-  .formulario label:nth-child(5) {
-    grid-area: asunto;
-  }
-  .formulario label:nth-child(6) {
-    grid-area: mensaje;
-  }
-  .formulario button:nth-child(7) {
-    grid-area: btn;
-    background-color: #b36d12ee;
-    border: 0;
-    color: white;
-    border-radius: 10px;
-    font-size: 20px;
-    margin: 10px;
-    margin-top: 20px;
-    font-family: "Quicksand", sans-serif;
-    cursor: pointer;
-  }
-  .formulario > label {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    color: white;
-  }
-  .formulario > label > input,
-  .formulario > label > textarea {
-    background-color: transparent;
-    color: #fff;
-    border: 0;
-    outline: none;
-    border-bottom: 1px solid white;
-  }
-  .formulario > label > input:focus {
-    color: white;
-    font-family: "Quicksand", sans-serif;
-  }
-  .formulario > label > textarea {
-    height: 50px;
-  }
-  
-  /* Login-franquica*/
-  
-  .login-card {
-    margin: 20px 0;
-    width: 400px;
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px solid #fff;
-    text-align: center;
-    color: #fff;
-  }
-  .login-card > h2 {
-    margin: 0 0 10px;
-    font-size: 20px;
-    font-weight: 600;
-    text-transform: uppercase;
-  }
-  .login-form {
-    width: 80%;
-    margin: 0;
-    display: grid;
-    gap: 14px;
-  }
-  .login-form > a {
-    color: #01050c;
-    text-decoration: none;
-  }
-  .login-form > input,
-  .login-form > button {
-    background-color: #ffffff81;
-    width: 100%;
-    height: 40px;
-    padding: 0;
-    border-radius: 8px;
-  }
-  .login-form > input {
-    border: 2px solid #ebebeb;
-    color: #140a0a;
-  }
-  .login-form > button {
-    width: 100%;
-    height: 40px;
-    background: #a8bad8;
-    color: #f9f9f9;
-    font-weight: 600;
-    cursor: pointer;
-  }
+  background-image: url(../img/17-minute\ zucchini\ and\ ricotta\ pizza.jpg);
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+form {
+  width: 450px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 7px;
+}
+
+h2 {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: 17px;
+  border: none;
+}
+textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+}
+
+#botton {
+  background: #31384a;
+  color: #fff;
+  padding: 20px;
+}
+#botton:hover {
+  cursor: pointer;
+}
+
+/* Login-franquica*/
+
+.login-card {
+  margin: 20px 0;
+  width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  text-align: center;
+  color: #fff;
+}
+.login-card > h2 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.login-form {
+  width: 80%;
+  margin: 0;
+  display: grid;
+  gap: 14px;
+}
+.login-form > a {
+  color: #f6f8fb;
+  text-decoration: none;
+}
+.login-form > input,
+.login-form > button {
+  background-color: #ffffff81;
+  width: 100%;
+  height: 40px;
+  padding: 0;
+  border-radius: 8px;
+}
+.login-form > input {
+  border: 2px solid #8f0d0d;
+  color: #e0d6d6;
+}
+.login-form > button {
+  width: 100%;
+  height: 40px;
+  background: #a8bad8;
+  color: #f9f9f9;
+  font-weight: 600;
+  cursor: pointer;
+}

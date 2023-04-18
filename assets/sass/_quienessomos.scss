@@ -1,23 +1,23 @@
 /*quienessomos*/
 .container__QuienesSomos {
-    background-image: url(../img/pizza-come-in-pizzeria.jpg);
-    background-size: cover;
-    width: 100%;
-    height: 700px;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-  }
-  
-  .parráfos__QuienesSomos h2{
-    color: black;
-    font-size: 30px;
-    font-weight: 800;
-    margin-bottom: 10px;
-  }
-  .parráfos__QuienesSomos p{
-    padding: 10px;
-    color: #9c591b;
-    font-size: 18px;
-    font-weight: 600;
-  }
+  background-image: url(../img/pizza-come-in-pizzeria.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.parráfos__QuienesSomos h2 {
+  color: black;
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.parráfos__QuienesSomos p {
+  padding: 10px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}

@@ -1,8 +1,11 @@
 @import "index";
 @import "sucursales";
+@import "carta";
 @import "quienessomos";
 @import "contacto";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Quicksand:wght@300&family=Roboto:wght@100&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -23,14 +26,14 @@
   .logo-navbar {
     width: 50%;
   }
-  
+
   ul {
     display: flex;
     align-items: center;
     list-style: none;
     li {
       margin-right: 1rem;
-       & a:after {
+      & a:after {
         position: absolute;
         bottom: 7px;
         left: 0px;
@@ -46,20 +49,18 @@
         position: relative;
         color: #ffffff;
         text-decoration: none;
-         &:hover:after {
+        &:hover:after {
           opacity: 1;
           transform: translateY(15px);
         }
       }
-      
     }
   }
-   li:last-child {
+  li:last-child {
     background: #4ad295;
     padding: 0.25rem 0.75rem;
     border-radius: 0.2rem;
-  }  
-  
+  }
 }
 .fa-bars {
   font-size: 25px;
@@ -70,23 +71,32 @@
 .nav-bar #check {
   display: none;
 }
-
-
+header .d-item {
+  height: 400px;
+  .d-img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
 /*Inicio-footer*/
 .footer-pie {
   width: 100%;
   background: #0a141d;
   .footer-container {
-    max-width: 1200px;
+    max-width: 100%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 40px;
     padding: 20px 0px;
+    text-align: center;
     .column-a h2 {
       color: #fff;
       margin-bottom: 25px;
       font-size: 20px;
+    }
+    .column-a p {
+      font-size: 18px;
     }
     .column-a {
       color: #efefef;
@@ -100,42 +110,31 @@
       line-height: 40px;
       color: #fff;
       margin-right: 10px;
-      background-color: #0d2033;
       text-align: center;
       transition: all 300ms ease;
-       &:hover {
+      &:hover {
         color: chocolate;
       }
     }
   }
-  .footer-logo {
-    width: 100%;
-    height: 100%;
+  .logo-footer {
+    width: 150px;
+    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .footer-container2 {
     background-color: #0a1a2a;
-    padding: 15px 10px;
+    padding: 15px 0px;
     text-align: center;
     small {
-      font-size: 20px;
-      color:#fff;
+      font-size: 15px;
+      color: #fff;
     }
   }
 }
 
-/*MEDIA QUERIES*/
-/*TABLET*/
-@media (max-width: 768px) {
-  .footer-pie .footer-container {
-    width: 70%;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 20px;
-    padding: 20px 0px;
-  }
-}
 /*MEDIA QUERIES*/
 /*TABLET*/
 @media (max-width: 768px) {
@@ -150,12 +149,13 @@
   }
   .nav-bar ul {
     display: block;
-    position: fixed;
-    top: 40px;
+    position: absolute;
+    top: 50px;
     left: -100%;
     background: #222222ab;
     width: 100%;
     height: 100vh;
+    z-index: 100;
     right: 0;
   }
   .nav-bar ul li {
@@ -182,105 +182,47 @@
     text-align: center;
   }
 }
-
-/*MEDIA QUERIES*/
-/*TABLET*/
-@media (max-width: 768px) {
-  .headerIndex {
-    display: flex;
-    flex-wrap: wrap;
-    background-image: url(../img/pizza-pizza-rellena.jpg);
-    background-size: cover;
-    width: 100%;
-    height: 200px;
-    justify-content: center;
-    align-items: center;
-  }
-  .headerIndex-info h1{
-    color: #ffffff;
-    font-size: 54px;
-  }
-  .links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    background-image: url(../img/pizza-pizza-rellena.jpg);
-    background-size: cover;
-    width: 100%;
-    height: 200px;
-  }
-}
-
-/*MEDIA QUERIES*/
-/*MOBIL*/
 @media (max-width: 576px) {
-  .headerIndex {
-    display: flex;
-    flex-wrap: wrap;
-    background-image: url(../img/pizza-pizza-rellena.jpg);
-    background-size: cover;
-    width: 100%;
-    height: 200px;
-    justify-content: center;
-    align-items: center;
-  }
-  .headerIndex-info h1{
-    color: #ffffff;
-    font-size: 38px;
+  header .d-item {
+    height: 500px;
+    header .d-img {
+      height: 100%;
+      object-fit: cover;
+    }
   }
 }
-
 /*MEDIA QUERIES*/
 /*MOBIL*/
 @media (max-width: 320px) {
-  .headerIndex {
-    display: flex;
-    flex-wrap: wrap;
-    background-image: url(../img/pizza-pizza-rellena.jpg);
-    background-size: cover;
-    width: 100%;
-    height: 100px;
-    justify-content: center;
-    align-items: center;
+  header .d-item {
+    height: 200px;
+    header .d-img {
+      height: 100%;
+      object-fit: cover;
+    }
   }
-  .headerIndex-info h1{
-    color: #ffffff;
-    font-size: 22px;
-  }
-  .banner{
+  main .banner {
     background-color: rgba(5, 5, 5, 0.945);
     width: 320px;
-    height: 180px;
+    height: 300px;
   }
-  .banner P{
+  main .banner P {
     text-align: center;
     margin: 30px;
     font-size: 18px;
     font-weight: 800;
     color: chocolate;
   }
-  .publicidad-Img {
+  main .gif {
     width: 320px;
-    height: 200px;
+    height: 300px;
   }
-  .links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    background-image: url(../img/pizza-pizza-rellena.jpg);
+  section.links {
+    background-image: url(../img/fondo_links1.jpg);
     background-size: cover;
     width: 100%;
-    height: 100px;
+    height: 200px;
   }
-  .button-Index {
-    height: 40px;
-    width: 180px;
-  }
-  
 }
 /*fin Index*/
 /*MEDIA QUERIES*/
@@ -291,21 +233,12 @@
     background-size: cover;
     width: 100%;
     height: 600px;
-    display: flex;
-    justify-content: end;
-    align-items: center;
   }
-  .parráfos__QuienesSomos h2{
-    color: black;
-    font-size: 20px;
-    font-weight: 800;
-    margin-bottom: 10px;
+  .parráfos__QuienesSomos h2 {
+    font-size: 22px;
   }
-  .parráfos__QuienesSomos p{
-    padding: 10px;
-    color: #9c591b;
-    font-size: 16px;
-    font-weight: 600;
+  .parráfos__QuienesSomos p {
+    font-size: 18px;
   }
 }
 @media (max-width: 576px) {
@@ -313,57 +246,72 @@
     background-image: url(../img/pizza-come-in-pizzeria.jpg);
     background-size: cover;
     width: 100%;
-    height: 500px;
-    display: flex;
-    justify-content: end;
-    align-items: center;
+    height: 400px;
   }
-
+  .parráfos__QuienesSomos h2 {
+    font-size: 22px;
+  }
+  .parráfos__QuienesSomos p {
+    padding: 5px;
+    font-size: 11px;
+  }
 }
-
 
 /*MOBIL*/
 @media (max-width: 320px) {
   .container__QuienesSomos {
     background-image: url(../img/pizza-come-in-pizzeria.jpg);
-    background-size:cover;
+    background-size: cover;
     width: 100%;
-    height: 480px;
-    display: flex;
-    justify-content: end;
-    align-items: center;
+    height: 400px;
+  }
+  .parráfos__QuienesSomos h2 {
+    font-size: 16px;
+  }
+  .parráfos__QuienesSomos p {
+    padding: 5px;
+    margin: 0%;
+    font-size: 12px;
   }
 }
 
+/*MEDIA QUERIES*/
+/*MOBIL*/
+
+@media (max-width: 320px) {
+  form {
+    width: 100%;
+  }
+  .login-card {
+    margin: 0;
+    width: 300px;
+    padding: 0px;
+    border-radius: 10px;
+    color: #0a1a2a;
+  }
+}
 
 /*MEDIA QUERIES*/
 /*MOBIL*/
-@media (max-width: 576px) {
+@media (max-width: 568px) {
   .footer-pie .footer-container {
-    width: 50%;
+    display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px;
-    padding: 20px 0px;
+    padding: 10px 0px;
+    justify-items: center;
+    align-items: center;
   }
 }
 /*MEDIA QUERIES*/
 /*MOBIL*/
 @media (max-width: 320px) {
-  footer-pie {
-    width: 20%;
-  }
-
-  .footer-container {
-    width: 10%;
+  .footer-pie .footer-container {
+    display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 10px;
-    padding: 20px 0px;
-  }
-  .logo-footer img{
-    width: 80px;
-  }
-  
-.footer-pie .footer-container .colum-a h2{
-    font-size: 16px;
+    grid-gap: 20px;
+    padding: 10px 0px;
+    justify-items: center;
+    align-items: center;
   }
 }
