@@ -6,6 +6,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Quicksand:wght@300&family=Roboto:wght@100&display=swap");
+/*Variables*/
+$colorChocolate: #f0790a;
+$colorBancocontenido: #fff;
+$colorNegrocontenido: #000205;
+$title-font: ;
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +25,6 @@
   align-items: center;
   padding: 0.5rem 2rem;
   font-size: 0.7em;
-  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-weight: 800;
   .logo-navbar {
@@ -202,7 +206,6 @@ header .d-item {
     }
   }
   main .banner {
-    background-color: rgba(5, 5, 5, 0.945);
     width: 320px;
     height: 300px;
   }
@@ -210,8 +213,6 @@ header .d-item {
     text-align: center;
     margin: 30px;
     font-size: 18px;
-    font-weight: 800;
-    color: chocolate;
   }
   main .gif {
     width: 320px;
@@ -287,7 +288,6 @@ header .d-item {
     width: 300px;
     padding: 0px;
     border-radius: 10px;
-    color: #0a1a2a;
   }
 }
 

@@ -1,23 +1,26 @@
 /*quienessomos*/
+/*aplico  mixin*/
+@mixin tamaños ($widtn,$height){
+  width: $widtn;
+  height: $height;
+}
 .container__QuienesSomos {
+  @include tamaños(100%,700px );
   background-image: url(../img/pizza-come-in-pizzeria.jpg);
   background-size: cover;
-  width: 100%;
-  height: 700px;
   display: flex;
   justify-content: end;
   align-items: center;
-}
-
-.parráfos__QuienesSomos h2 {
-  color: black;
-  font-size: 30px;
-  font-weight: 800;
-  margin-bottom: 10px;
-}
-.parráfos__QuienesSomos p {
-  padding: 10px;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 600;
+  .h2 {
+    color: black;
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 10px;
+  }
+  p {
+    padding: 10px;
+    color: $colorBancocontenido;
+    font-size: 18px;
+    font-weight: 600;
+  }
 }

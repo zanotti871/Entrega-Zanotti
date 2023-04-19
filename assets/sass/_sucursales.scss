@@ -1,22 +1,21 @@
 /*Sucursales*/
 .container__Tarjeta {
-  background-color: #f0790a;
+  background-color:$colorChocolate;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   font-weight: 600;
-}
-.container__Tarjeta h3 {
-  font-size: 22px;
-  color: #110801;
-}
-.container__Tarjeta p {
-  font-size: 20px;
-  color: #000205;
+   h3 {
+    font-size: 22px;
+    color: $colorNegrocontenid;
+  }
+   p {
+    font-size: 20px;
+  }
 }
 .tarjeta {
   width: 250px;
-  border: 2px solid #fff;
+  border: 2px solid $colorBancocontenido;
   border-radius: 8px;
   padding: 10px;
   margin: 10px;
@@ -25,7 +24,7 @@
 }
 .fa-location-dot {
   font-size: 25px;
-  color: #fff;
+  color: $colorBancocontenido;
   margin-right: 20px;
 }
 .tarjeta__titulo {
@@ -42,8 +41,8 @@
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #fff;
-  background-color: #f0790a;
+  color: $colorBancocontenido;
+  background-color:$colorChocolate;
   border: none;
   border-radius: 20px;
   position: relative;
@@ -53,7 +52,7 @@
 }
 
 .btn:hover {
-  color: #f0790a;
+  color: $colorChocolate;
   transition: all 1s ease-in-out;
 }
 .btn::before {
@@ -62,7 +61,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: white;
+  background-color: $colorBancocontenido;
   border-radius: 5px;
   width: 0;
   height: 100%;

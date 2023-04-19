@@ -99,7 +99,7 @@ button:hover::before {
 
 .container__Tarjeta h3 {
   font-size: 22px;
-  color: #110801;
+  color: #000205;
 }
 
 .container__Tarjeta p {
@@ -394,6 +394,7 @@ textarea {
   cursor: pointer;
 }
 
+/*Variables*/
 * {
   margin: 0;
   padding: 0;
@@ -594,7 +595,6 @@ header .d-item .d-img {
        object-fit: cover;
   }
   main .banner {
-    background-color: rgba(5, 5, 5, 0.945);
     width: 320px;
     height: 300px;
   }
@@ -602,8 +602,6 @@ header .d-item .d-img {
     text-align: center;
     margin: 30px;
     font-size: 18px;
-    font-weight: 800;
-    color: chocolate;
   }
   main .gif {
     width: 320px;
@@ -676,7 +674,6 @@ header .d-item .d-img {
     width: 300px;
     padding: 0px;
     border-radius: 10px;
-    color: #0a1a2a;
   }
 }
 /*MEDIA QUERIES*/
