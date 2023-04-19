@@ -1,11 +1,11 @@
 /*quienessomos*/
 /*aplico  mixin*/
-@mixin tamaños ($widtn,$height){
+@mixin tamaños($widtn, $height) {
   width: $widtn;
   height: $height;
 }
 .container__QuienesSomos {
-  @include tamaños(100%,700px );
+  @include tamaños(100%, 700px);
   background-image: url(../img/pizza-come-in-pizzeria.jpg);
   background-size: cover;
   display: flex;
